@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" >
+
+<!-- Toda la informacion no visible, que el navgador necesita -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mi Primerita Página</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/script.js"></script>
+        <!-- Esta linea hace que la pagina se ajuste al tamaño de tu pantalla -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <meta name="description" content="Pagina de ejemplo para aprendizaje de programacion"/>
+        <!-- Cambia el color del navegador -->
+        <meta name="theme-color" content="#000000"/>
+
+        <link rel="manifest" href="/manifest.json"/>
+        <link rel="icon" href="/favicon.ico"/>
+        <link rel="preload" href="/front.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+
+    </head>
+
+<!-- Todo el contenido visible para los usuarios -->
+    <body>
+        <nav></nav>
+        <header>
+            <h1>Cabecera de la Web</h1>
+        </header>
+
+        <!-- El main agrupa el contenido principal de la pagina -->
+        <main>
+
+            <input type="search" />
+            <input type="password" />
+            <input type="file" accept="image/*" multiple />
+            <input type="checkbox" value="El checkbox esta activo" checked/>
+
+            <br />
+            <textarea cols="20" rows="10"></textarea>
+
+            <fieldset>
+                <legend>Checkboxes</legend>
+
+                <input id="uno" type="checkbox" value="Uno" name="lista"/>
+                <label for="uno">Uno</label>
+                <input id="dos" type="checkbox" value="Dos" name="lista"/>
+                <label for="dos">Dos</label>
+                <input id="tres" type="checkbox" value="Tres" name="lista"/>
+                <label for="tres">Tres</label>
+            </fieldset>            
+
+            <br />
+            <form action="pagina destino" method="post">
+                <label for="name">Nombre: </label>
+                <input id="name" name="name" value="Jon" />
+                <!-- De estsa segunda forma, asociamos el contenido con el campo directamente -->
+                <label>
+                    Email
+                    <input id="email" type="email" name="name" required placeholder="zzz@gmail.com" />
+                </label>
+                <button>Iniciar Sesion</button>
+            </form>
+
+
+        </main>
+
+    </body>
+</html>
